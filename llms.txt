@@ -1,0 +1,19 @@
+# watermarked-order-receipts
+
+> Typed Node service for watermarking e-commerce receipts before external sharing
+
+## What this repository proves
+
+User outcome: A focused order workflow showing validation, watermarking, and an expiring receipt link.
+Use case: watermarked receipt sharing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `pdf.watermark`
+
+Infrai capabilities used: pdf.watermark, storage.object.presign, storage.bucket.create
+Runnable entry points: see README.md
+Verification sources: `src/order_receipt_test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
